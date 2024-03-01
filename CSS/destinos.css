@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(bottom, #5433FF, #20BDFF, #A5FECB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #5433FF, #20BDFF, #A5FECB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  :root{
+    --letrash1:#39A2DB;
+    --letrash2:#A2DBFA;
+  }
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main-content {
+    margin-top: 60px; /* Ajustar el margen superior para compensar la altura del navbar */
+  }
+  
+  .logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 20px; /* Ajusta el margen derecho del logo según tus necesidades */
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Animación al pasar el mouse */
+    font-size: 25px;
+  
+  }
+  
+  .menu a:hover {
+    color: gray; /* Color al pasar el mouse */
+  }
+  
+  /*css de la imagen del header*/
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .image {
+    filter: grayscale(30%) blur(2px);
+    width: 100%; /* Ancho ocupando toda la página */
+    height: 400px; /* Altura deseada */
+    object-fit: cover; /* Ajuste para cubrir el contenedor manteniendo la relación de aspecto */
+    object-position: center; /* Posición centrada verticalmente */
+  }
+  .text {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar la posición para centrar completamente */
+    text-align: center; /* Alinear el texto al centro */
+    font-size: 30px;
+    font-family: "Poppins", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-shadow: 2px 2px 2px black;
+  }
+  
